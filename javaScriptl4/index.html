@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>lesson 4</title>
+</head>
+
+<body>
+    <h1>Lesson 4</h1>
+
+    <div class="frame">
+
+        <div class="task">
+            <button onclick="plus()">+</button>
+            <span id="count">1</span>
+            <button onclick="minus()">-</button>
+        </div>
+        <div class="task">
+            <h2>
+                the value city at the country
+            </h2>
+        </div>
+        <select id="city" oninput="cityChange()">
+            <option>Ako</option>
+            <option>alaksa</option>
+            <option>rahat</option>
+            <option>demona</option>
+            <option>hora</option>
+            <option>tal aviv</option>
+            <option>teba</option>
+        </select>
+        <span id="output1"></span>
+    </div>
+    <div class="task">
+        <h2>password=a123? username=banana?</h2>
+        <input type="text" id="username" placeholder="user">
+        <input type="password" id="password" placeholder="password">
+        <button onclick="loginCorret()">login</button>
+        <p id="output2"></p>
+    </div>
+</body>
+
+</html>
