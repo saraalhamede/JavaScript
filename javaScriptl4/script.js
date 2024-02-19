@@ -18,6 +18,7 @@ function cityChange() {
 
     }
 }
+
 function loginCorret() {
     const pw = document.getElementById("password").value;
     const un = document.getElementById("username").value;
@@ -28,6 +29,20 @@ function loginCorret() {
     } else {
         document.getElementById("output2").innerHTML = "Please try again!!";
         output.style.color = "red";
-
+    }
+}
+function color() {
+    const elem = document.getElementById("grade");
+    const num = +elem.value;
+    if (num <= 40) {
+        elem.style.backgroundColor = "RED";
+    } else if (num <= 60) {
+        elem.style.backgroundColor = "orange";
+    } else if (num <= 80) {
+        elem.style.backgroundColor = "blue";
+    } else if (num <= 100) {
+        elem.style.backgroundColor = "green";
+    } else {
+        elem.style.backgroundColor = "";
     }
 }
