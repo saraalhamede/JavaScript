@@ -54,3 +54,24 @@ function sortUtoD() {
     numbers.sort((a, b) => b - a);
     div.innerHTML = numbers.join(', ')
 }
+function deleteB() {
+    numbers.shift();
+    div.innerHTML = numbers.join(', ')
+
+}
+function deleteE() {
+    numbers.pop();
+    div.innerHTML = numbers.join(', ')
+
+}
+function randomeNumB() {
+    let num = Math.round(Math.random() * 100);
+    numbers.unshift(numbers.push(num));
+    div.innerHTML = numbers.join(', ')
+
+}
+function randomeNumE() {
+    let num = Math.round(Math.random() * 100);
+    numbers.push(num);
+    div.innerHTML = numbers.join(', ')
+}
